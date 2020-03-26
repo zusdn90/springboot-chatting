@@ -3,11 +3,15 @@ package com.rest.api.chat.model;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 @Getter
 @Setter
-public class ChatRoom {
+public class ChatRoom implements Serializable { //Redis에 저장되는 객체들은 Serialize가능해야함.
+
+    private static final long serialVersionUID = 6494678977089006639L;
+
     private String roomId;
     private String name;
 
