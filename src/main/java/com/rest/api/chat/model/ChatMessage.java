@@ -1,4 +1,4 @@
-package com.rest.api.chat.dto;
+package com.rest.api.chat.model;
 
 import lombok.Getter;
 import lombok.Setter;
